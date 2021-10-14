@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    * {
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    body {
+      background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+      background-position:-30% 150% , 120% -240%;
+      background-color: hsl(185, 75%, 39%);
+      background-repeat: no-repeat ,no-repeat;
+      
+      
+    }
+    div.infos {
+      width: 400px;
+      height: 450px;
+      margin: 10% auto;
+      background-color: #fff;
+      padding: 0;
+      border-radius: 15px;
+      position: relative;
+
+    }
+    #bg {
+      width: 100%;
+      height: 150px;
+      border-radius: 5px 5px 0 0;
+      
+
+    }
+    .avatar {
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      top: 100px;
+      left: 150px;
+   
+    }
+    h2 {
+      color: hsl(229, 23%, 23%);
+      font-size: 18px;
+      text-align: center;
+      margin-top: 70px;
+      font-weight: 700;
+    }
+    span {
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+    #country {
+      text-align: center;
+      color: hsl(0, 0%, 59%);
+      padding-bottom: 30px;
+      border-bottom: 1px solid hsl(0, 0%, 89%);
+    }
+    .states {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    span.states h2 {
+      margin: 15px 20px;
+    }
+    span.states p {
+      font-size: 14px;
+      margin: -10px;
+      text-align: center;
+    }
+  </style>
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <div class="infos">
+    <img src="images/bg-pattern-card.svg" alt="" id="bg">
+    <img src="images/image-victor.jpg" alt="" class="avatar">
+    <h2>Victor Crest <span>26</span></h2>
+    <p id="country">London</p>
+    <span class="states">
+      <span class="one">
+        <h2>80K</h2>
+        <p>Followers</p>
+      </span>
+      <span class="two">
+        <h2>803K</h2>
+        <p>Likes</p>
+      </span>
+      <span class="three">
+        <h2>1.4K</h2>
+        <p>Photos</p>
+      </span>
+    </span>
+  </div>
+</body>
+</html>
